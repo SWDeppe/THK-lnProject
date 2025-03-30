@@ -259,13 +259,8 @@ function stopChar() {
 document.addEventListener('keyup', (event) => {
   console.log(index)
   if (canMoove == false) {
-    //event.key
     let allLines = document.querySelectorAll('.line')
-    //let allImgs = document.querySelectorAll('.imgsText')
     if (index == 0) {
-      /*allImgs.forEach((img) => {
-        img.style.opacity = 0
-      })*/
       allLines.forEach((line) => {
         line.style.opacity = 0
       })
