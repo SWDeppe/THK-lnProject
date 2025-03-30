@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  font-family: 'Oswald', sans-serif;
+}
+.MapCityes {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+}
+.mainContent {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  margin-left: 10vw;
+  width: 50vw;
+  transition: opacity 0.8s ease-in-out;
+}
+.titleSection {
+  position: absolute;
+  margin-left: calc(40vw - 50px);
+  margin-bottom: 1vh;
+  display: inline-block;
+  font-size: 4rem;
+  font-family: 'Bebas Neue', sans-serif;
+}
+.inCityes {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+}
+.line {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  color: aliceblue;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.texteGame {
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  margin-top: 25vh;
+  margin-left: 5vw;
+  width: 70vw;
+}
+.texteGameCheck {
+  visibility: hidden;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 70vw;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+}
+
+.background {
+  width: 500vw;
+  height: 100vh;
+}
+.chooseBtn {
+  display: flex;
+  position: absolute;
+  top: 80vh;
+  left: 35vw;
+  width: 30vw;
+  height: 15vh;
+}
+.arrowLeft {
+  width: 10vw;
+  cursor: pointer;
+}
+.arrowRight {
+  rotate: 180deg;
+  width: 10vw;
+  cursor: pointer;
+}
+.EnterBtn {
+  height: 30%;
+  width: 100%;
+  font-size: 1.2rem;
+  align-self: center;
+  padding-bottom: 3vh;
+  font-family: 'Oswald', sans-serif;
+  border: none;
+  background-color: rgb(168, 97, 61);
+  border-radius: 3vh;
+  cursor: pointer;
+}
+.EnterBtn:hover {
+  scale: 120%;
+}
+.arrowLeft:hover {
+  scale: 110%;
+}
+.arrowRight:hover {
+  scale: 110%;
+}
+.placeArrow {
+  position: fixed;
+  top: -2vh;
+  left: 3vw;
+  width: 10vw;
+  rotate: 90deg;
+}
+.loading {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+  animation-duration: 2s;
+  background-color: aliceblue;
+}
+@keyframes load {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes arrive {
+  to {
+    opacity: 0;
+  }
+}
+.helloImg {
+  opacity: 0;
+  height: 450px;
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+}
+.keyImg {
+  opacity: 0;
+  position: absolute;
+  top: 330px;
+  left: 320px;
+  scale: 110%;
+}
+.helloText {
+  font-weight: 500;
+  opacity: 0;
+  position: absolute;
+  top: 100px;
+  left: 324px;
+  font-size: 2rem;
+}
+.character {
+  margin-left: 0px;
+  margin-top: -450px;
+  height: 900px;
+  object-position: left;
+}
+.wrapChar {
+  position: absolute;
+  overflow: hidden;
+  height: 450px;
+  width: 324px;
+  bottom: 0;
+  margin-bottom: -40px;
+
+  margin-left: -70px;
+}

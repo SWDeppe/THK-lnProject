@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+10&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body">
+    <div class="loading" id="loading">
+      <img src="images/hello.png" class="helloImg" id="helloImg" />
+      <img src="images/keys.png" class="keyImg" id="keyImg" />
+      <p class="helloText" id="helloText">
+        Hi nice to meet you, i'm révoela, will tell you my story. <br />Listen
+        carfully, and enjoy!!<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        (press D key to continue)<br />left
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        right
+      </p>
+    </div>
+    <div class="chooseCity">
+      <img
+        src="images/mapCityes/backMap4.png"
+        alt=""
+        class="MapCityes"
+        id="MapCityes"
+      />
+      <div class="chooseBtn">
+        <img
+          src="images/arrow.png"
+          class="arrowRight"
+          onclick="changeChossenCity(true)"
+        />
+        <button class="EnterBtn" id="EnterBtn" onclick="enterCity()">
+          ENTER
+        </button>
+        <img
+          src="images/arrow.png"
+          class="arrowLeft"
+          onclick="changeChossenCity(false)"
+        />
+      </div>
+      <img
+        src="images/ArrowAcongraphic.png"
+        class="placeArrow"
+        id="placeArrow"
+      />
+    </div>
+
+    <div class="inCityes" id="inCityes">
+      <img
+        src="images/inCityes/backCityes.png"
+        alt=""
+        class="background"
+        id="background"
+      />
+      <section class="mainContent" id="sec2">
+        <h1 class="titleSection" id="titleMain">TITLE</h1>
+        <div class="texteGameCheck" id="textMainCheck"></div>
+        <div class="texteGame" id="textMain"></div>
+        <div class="images" id="illustationsText"></div>
+      </section>
+
+      <div class="wrapChar" id="wrapChar">
+        <img
+          src="images/characcter.png"
+          alt=""
+          class="character"
+          id="charImg"
+        />
+      </div>
+    </div>
+    <script src="logic.js"></script>
+  </body>
+</html>
