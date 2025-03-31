@@ -17,13 +17,13 @@ body {
   opacity: 0;
   top: 0;
   left: 0;
-  margin-left: 10vw;
+  margin-left: 12vw;
   width: 50vw;
   transition: opacity 0.8s ease-in-out;
 }
 .titleSection {
   position: absolute;
-  margin-left: calc(40vw - 50px);
+  margin-left: 5vw;
   margin-bottom: 1vh;
   display: inline-block;
   font-size: 4rem;
@@ -53,14 +53,14 @@ body {
   font-size: 2rem;
   margin-top: 25vh;
   margin-left: 5vw;
-  width: 70vw;
+  width: 60vw;
 }
 .texteGameCheck {
   visibility: hidden;
   position: absolute;
   top: -9999px;
   left: -9999px;
-  width: 70vw;
+  width: 60vw;
   font-family: 'Oswald', sans-serif;
   font-size: 2rem;
 }
@@ -122,7 +122,7 @@ body {
   left: 0;
   opacity: 0;
   z-index: 0;
-  animation-duration: 2s;
+  animation-duration: 1s;
   background-color: aliceblue;
 }
 @keyframes load {
@@ -145,31 +145,46 @@ body {
 .keyImg {
   opacity: 0;
   position: absolute;
-  top: 330px;
-  left: 320px;
-  scale: 110%;
+  top: 0px;
+  left: 304px;
+  scale: 100%;
+  width: 450px;
 }
 .helloText {
-  font-weight: 500;
+  font-weight: 400;
   opacity: 0;
   position: absolute;
   top: 100px;
   left: 324px;
-  font-size: 2rem;
+  width: 60vw;
+  font-size: 1.4rem;
+  margin: 0;
+}
+.helloTitle {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 324px;
 }
 .character {
   margin-left: 0px;
-  margin-top: -450px;
-  height: 900px;
+  margin-top: -600px;
+  height: 1200px;
   object-position: left;
 }
 .wrapChar {
   position: absolute;
   overflow: hidden;
-  height: 450px;
-  width: 324px;
+  height: 600px;
+  width: 432px;
   bottom: 0;
-  margin-bottom: -40px;
+  margin-bottom: -50px;
 
   margin-left: -70px;
+}
+.images {
+  margin-left: 60vw;
+  width: 25vw;
+  margin-top: 45vh;
+  border-radius: 30px;
 }
